@@ -26,6 +26,7 @@ const gameSchema = new Schema({
   validMove: { type: Boolean, default: true },
   winner: { type: String, default: "NA" },
   gameOver: { type: Boolean, default: false },
+  comments: { type: String, default: "No comments as of now" },
 });
 
 module.exports = mongoose.model("Game", gameSchema);
