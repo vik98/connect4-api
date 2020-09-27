@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+  </head>
+  <body>
+    <h3><%= title %></h3>
+    <p>
+      Welcome to <%= title %>. Please proceed with desired actions by clicking
+      the respective button.
+    </p>
+    <form action="/startNewGame" method="GET">
+      <button class="waves-effect waves-teal btn-flat" type="submit">
+        Start Game
+      </button>
+    </form>
+
+    <form action="/getGameById" method="GET"></form>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</html>
