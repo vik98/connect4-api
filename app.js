@@ -22,7 +22,7 @@ var Game = require("./models/Game");
 // });
 
 const connectionString =
-  "mongodb+srv://vikram:vikram@cluster0.mwavc.mongodb.net/connect4-api?retryWrites=true&w=majority";
+  "mongodb+srv://<username>:<password>@cluster0.mwavc.mongodb.net/connect4-api?retryWrites=true&w=majority";
 
 mongoose.connect(connectionString, {
   useNewUrlParser: true,
